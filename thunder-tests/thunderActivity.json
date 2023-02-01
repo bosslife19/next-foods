@@ -1,0 +1,40 @@
+[
+  {
+    "_id": "18be50c2-c3d9-4828-af9c-3a6f8edd5942",
+    "colId": "history",
+    "containerId": "",
+    "name": "localhost:3000/api/products",
+    "url": "localhost:3000/api/products/",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-01-15T09:35:11.040Z",
+    "modified": "2023-01-18T14:10:15.006Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"title\": \"pizza4\",\n  \"img\": \"/img/pizza.png\",\n  \"desc\": \"desc4\",\n  \"prices\": [12, 13, 14],\n  \"extraOptions\": [\n    {\"text\": \"potatos sauces\", \n    \"price\": 2\n  },\n  {\n    \"text\": \"more onions\",\n    \"price\": 4\n  },\n  {\n    \"text\": \"more vegetables\",\n    \"price\": 6\n  }]\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "63d39200-fe1b-4bf8-a4ae-adee4d6e3d25",
+    "colId": "history",
+    "containerId": "",
+    "name": "localhost:3000/api/orders/products",
+    "url": "localhost:3000/api/orders/products",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2023-01-15T09:50:55.955Z",
+    "modified": "2023-01-15T09:50:55.955Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"title\": \"pizza1\",\n  \"img\": \"/img/pizza.png\",\n  \"desc\": \"desc1\",\n  \"prices\": [12, 13, 14],\n  \"extraOptions\": [{\"text\": \"Garlic sauce\", \n    \"price\": 2\n  }]\n}",
+      "form": []
+    },
+    "tests": []
+  }
+]
