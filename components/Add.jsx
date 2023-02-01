@@ -34,7 +34,7 @@ function Add({setClose}) {
         , data)
         const {url} = uploadRes.data;
         const newProduct = {title, desc, prices, extraOptions, img: url}
-        await axios.post('http://localhost:3000/api/products', newProduct)
+        await axios.post('https://woksfoods.vercel.app/api/products', newProduct)
         setClose(true)
         } catch (error) {
             console.log(error)

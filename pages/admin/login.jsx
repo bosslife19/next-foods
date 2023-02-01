@@ -11,7 +11,7 @@ function Login() {
 
   const handleClick = async () => {
     try {
-      await axios.post('http://localhost:3000/api/login', {username, password});
+      await axios.post('https://woksfoods.vercel.app/api/login', {username, password});
       router.push('/admin')
     } catch (error) {
       console.log(error)
