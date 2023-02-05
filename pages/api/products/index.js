@@ -4,8 +4,9 @@ import Product from '../../../models/Product'
 export default async function handler(req, res) {
     const {method, cookies}  = req;
     // const token = cookies.token
-
+  console.log('conecting..')
     dbConnect()
+    console.log('finished connecting')
     if(method === 'GET'){
       try {
         console.log('ran')
