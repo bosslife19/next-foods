@@ -8,7 +8,9 @@ export default async function handler(req, res) {
     dbConnect()
     if(method === 'GET'){
       try {
+        console.log('ran')
         const products = await Product.find()
+        console.log('returned')
         res.status(200).json(products)
       } catch (error) {
         res.status(500).json(error)
