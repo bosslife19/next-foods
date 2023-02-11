@@ -5,7 +5,7 @@ export default async function handler(req, res) {
     const {method, cookies}  = req;
     // const token = cookies.token
   console.log('conecting..')
-    dbConnect()
+    await dbConnect()
     console.log('finished connecting')
     if(method === 'GET'){
       try {

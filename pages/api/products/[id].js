@@ -8,7 +8,7 @@ export default async function handler(req, res) {
       
 
 
-    dbConnect()
+    await dbConnect()
     if(method === 'GET'){
       try {
         const products = await Product.findById(id)
