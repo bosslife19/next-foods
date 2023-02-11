@@ -86,7 +86,7 @@ function Product({product}) {
 }
 
 export const getServerSideProps = async ({params}) => {
-    const response = await axios.get(`/api/products/${params.id}`);
+    const response = await axios.get(`https://woksfoods.vercel.app/api/products/${params.id}`);
     return {
       props:{
         product: response.data,

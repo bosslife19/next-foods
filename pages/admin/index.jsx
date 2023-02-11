@@ -10,7 +10,7 @@ function Index({productList, orders}) {
     const handleDelete = async (id) => {
 
         try {
-            const res = await axios.delete('/api/products/' + id)
+            const res = await axios.delete('https://woksfoods.vercel.app/api/products/' + id)
             setPizzaList(pizzaList.filter(pizza=>pizza._id !== id))
         } catch (error) {
             console.log(error)
@@ -123,8 +123,8 @@ export const getServerSideProps = async (ctx) => {
         }
     }
 
-    const productList = await axios.get('/api/products')
-    const orders= await axios.get('/api/orders')
+    const productList = await axios.get('https://woksfoods.vercel.app/api/products')
+    const orders= await axios.get('https://woksfoods.vercel.app/api/orders')
     return{
         props:{
             orders: orders.data,
